@@ -1,0 +1,61 @@
+/* Common styles for card and details */
+* {
+    font-family: "Times New Roman", Times, serif;
+    padding: 0px;
+    margin: 0px;
+  }
+  .container {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px;
+  }
+  .card-container {
+    width: 300px;
+    height:auto;
+    margin: 1rem;
+    text-align: center;
+  }
+
+  img {
+    width: 18vw;
+    height: 35vh;
+    border-radius: 5px;
+    padding-bottom: 2rem;
+  }
+
+  .details {
+    display: none;
+  }
+  .card-text {
+    padding-top: 0.5rem;
+    opacity: 70%;
+  }
+
+  /* Media query for responsiveness  */
+  @media screen and (max-width: 768px) {
+    .card-container {
+      width: 50%;
+    }
+    .card-container img {
+      width: 50vw;
+    }
+
+  }
+
+  /* Hover effect to display details */
+  .card-container:hover .details {
+    display: block;
+  }
+
+  /* Smooth transitions */
+  .card-container {
+    transition: transform 0.3s ease;
+  }
+
+  .card-container:hover {
+    transform: scale(1.1);
+  }
